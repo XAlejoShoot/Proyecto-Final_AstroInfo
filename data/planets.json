@@ -1,0 +1,152 @@
+[
+  {
+    "id": "mercury",
+    "name": "Mercurio",
+    "type": "Planeta terrestre",
+    "diameter": "4,879 km",
+    "distanceFromSun": "57.9 millones km",
+    "dayLength": "58.6 días",
+    "yearLength": "88 días",
+    "description": "Mercurio es el planeta más pequeño y más cercano al Sol del Sistema Solar. Su órbita alrededor del Sol tarda 87.97 días, el más corto de todos los planetas. Es un mundo rocoso y sin atmósfera significativa, con una superficie llena de cráteres similar a la Luna.",
+    "features": [
+      "Planeta más cercano al Sol",
+      "No tiene atmósfera significativa",
+      "Superficie similar a la Luna con muchos cráteres",
+      "Grandes variaciones de temperatura entre el día y la noche",
+      "Núcleo metálico que ocupa aproximadamente el 60% de su masa"
+    ],
+    "image": "https://solarsystem.nasa.gov/system/stellar_items/image_files/2_mercury_480x320.jpg"
+  },
+  {
+    "id": "venus",
+    "name": "Venus",
+    "type": "Planeta terrestre",
+    "diameter": "12,104 km",
+    "distanceFromSun": "108.2 millones km",
+    "dayLength": "243 días",
+    "yearLength": "225 días",
+    "description": "Venus es el segundo planeta desde el Sol y el más cercano a la Tierra en tamaño y masa. Está envuelto en una espesa atmósfera tóxica compuesta principalmente de dióxido de carbono, con nubes de ácido sulfúrico. Es el planeta más caliente del sistema solar debido a un intenso efecto invernadero.",
+    "features": [
+      "Rotación retrógrada (gira en sentido contrario a la mayoría de los planetas)",
+      "Atmósfera densa con efecto invernadero extremo",
+      "Temperatura superficial de aproximadamente 462°C",
+      "Presión atmosférica 92 veces mayor que la de la Tierra",
+      "Superficie volcánica con extensas llanuras de lava"
+    ],
+    "image": "https://solarsystem.nasa.gov/system/stellar_items/image_files/3_venus_480x320.jpg"
+  },
+  {
+    "id": "earth",
+    "name": "Tierra",
+    "type": "Planeta terrestre",
+    "diameter": "12,742 km",
+    "distanceFromSun": "149.6 millones km",
+    "dayLength": "24 horas",
+    "yearLength": "365.25 días",
+    "description": "La Tierra es el tercer planeta desde el Sol y el único lugar conocido en el universo donde existe vida. Aproximadamente el 71% de la superficie está cubierta de agua. La atmósfera está compuesta principalmente de nitrógeno y oxígeno, protegiendo la vida de la radiación dañina y ayudando a retener el calor.",
+    "features": [
+      "Único planeta conocido con vida",
+      "Abundante agua líquida en la superficie",
+      "Atmósfera rica en oxígeno",
+      "Campo magnético que protege de la radiación solar",
+      "Tectónica de placas activa"
+    ],
+    "moons": ["Luna"],
+    "image": "https://solarsystem.nasa.gov/system/stellar_items/image_files/4_earth_480x320.jpg"
+  },
+  {
+    "id": "mars",
+    "name": "Marte",
+    "type": "Planeta terrestre",
+    "diameter": "6,779 km",
+    "distanceFromSun": "227.9 millones km",
+    "dayLength": "24.6 horas",
+    "yearLength": "687 días",
+    "description": "Marte es el cuarto planeta desde el Sol y el segundo más pequeño del Sistema Solar. A menudo se le llama el 'Planeta Rojo' debido a la apariencia rojiza que le da el óxido de hierro predominante en su superficie. Tiene una atmósfera delgada y características geológicas como valles, desiertos y casquetes polares similares a la Tierra.",
+    "features": [
+      "Superficie rojiza debido al óxido de hierro",
+      "Posee el monte más alto del Sistema Solar: Olympus Mons",
+      "Evidencia de agua líquida en el pasado",
+      "Casquetes polares compuestos de hielo de agua y dióxido de carbono",
+      "Atmósfera delgada compuesta principalmente de dióxido de carbono"
+    ],
+    "moons": ["Fobos", "Deimos"],
+    "image": "https://solarsystem.nasa.gov/system/stellar_items/image_files/6_mars_480x320.jpg"
+  },
+  {
+    "id": "jupiter",
+    "name": "Júpiter",
+    "type": "Planeta gaseoso",
+    "diameter": "139,820 km",
+    "distanceFromSun": "778.5 millones km",
+    "dayLength": "9.9 horas",
+    "yearLength": "11.9 años",
+    "description": "Júpiter es el planeta más grande del Sistema Solar, con una masa dos veces y media la de todos los demás planetas juntos. Es un gigante gaseoso compuesto principalmente de hidrógeno y helio. Su característica más conocida es la Gran Mancha Roja, una tormenta gigante que ha existido durante al menos 400 años.",
+    "features": [
+      "Planeta más grande del Sistema Solar",
+      "Posee un sistema de anillos tenues",
+      "Gran Mancha Roja: una tormenta gigante persistente",
+      "Potente campo magnético, el más fuerte entre los planetas",
+      "Al menos 79 lunas conocidas"
+    ],
+    "moons": ["Ío", "Europa", "Ganímedes", "Calisto"],
+    "image": "https://solarsystem.nasa.gov/system/stellar_items/image_files/5_jupiter_480x320.jpg"
+  },
+  {
+    "id": "saturn",
+    "name": "Saturno",
+    "type": "Planeta gaseoso",
+    "diameter": "116,460 km",
+    "distanceFromSun": "1,434 millones km",
+    "dayLength": "10.7 horas",
+    "yearLength": "29.5 años",
+    "description": "Saturno es el sexto planeta desde el Sol y el segundo más grande del Sistema Solar. Es conocido principalmente por su impresionante sistema de anillos, que está compuesto principalmente de partículas de hielo y polvo. Al igual que Júpiter, es un gigante gaseoso compuesto principalmente de hidrógeno y helio.",
+    "features": [
+      "Sistema de anillos espectacular y extenso",
+      "Densidad tan baja que flotaría en agua",
+      "Vientos superficiales que pueden alcanzar los 1,800 km/h",
+      "Hexágono polar: una estructura hexagonal única en su polo norte",
+      "Al menos 82 lunas conocidas"
+    ],
+    "moons": ["Titán", "Encélado", "Mimas", "Tetis", "Dione", "Rea"],
+    "image": "https://solarsystem.nasa.gov/system/stellar_items/image_files/38_saturn_480x320.jpg"
+  },
+  {
+    "id": "uranus",
+    "name": "Urano",
+    "type": "Planeta helado",
+    "diameter": "50,724 km",
+    "distanceFromSun": "2,871 millones km",
+    "dayLength": "17.2 horas",
+    "yearLength": "84 años",
+    "description": "Urano es el séptimo planeta desde el Sol. Es un gigante de hielo con una composición similar a Neptuno, con una atmósfera compuesta principalmente de hidrógeno, helio y metano. Su característica más inusual es que gira de lado, con su eje de rotación casi paralelo a su órbita.",
+    "features": [
+      "Gira de lado, con un eje de rotación inclinado 98 grados",
+      "Color azul-verdoso debido al metano en su atmósfera",
+      "Sistema de anillos delgado y oscuro",
+      "Temperaturas extremadamente frías de aproximadamente -224°C",
+      "27 lunas conocidas, todas nombradas por personajes de Shakespeare y Pope"
+    ],
+    "moons": ["Miranda", "Ariel", "Umbriel", "Titania", "Oberón"],
+    "image": "https://solarsystem.nasa.gov/system/stellar_items/image_files/69_uranus_480x320.jpg"
+  },
+  {
+    "id": "neptune",
+    "name": "Neptuno",
+    "type": "Planeta helado",
+    "diameter": "49,244 km",
+    "distanceFromSun": "4,495 millones km",
+    "dayLength": "16.1 horas",
+    "yearLength": "165 años",
+    "description": "Neptuno es el octavo y más lejano planeta conocido del Sol. Es un gigante de hielo similar a Urano, con una atmósfera compuesta principalmente de hidrógeno, helio y metano. Es conocido por sus vientos feroces, que pueden alcanzar velocidades de hasta 2,100 km/h, los más rápidos de cualquier planeta en el Sistema Solar.",
+    "features": [
+      "Vientos más rápidos del Sistema Solar",
+      "Gran Mancha Oscura: un sistema de tormentas similar a la Gran Mancha Roja de Júpiter",
+      "Color azul intenso debido al metano en su atmósfera",
+      "Sistema de anillos tenues y delgados",
+      "14 lunas conocidas"
+    ],
+    "moons": ["Tritón", "Nereida", "Proteo"],
+    "image": "https://solarsystem.nasa.gov/system/stellar_items/image_files/90_neptune_480x320.jpg"
+  }
+]
