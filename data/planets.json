@@ -15,7 +15,7 @@
       "Grandes variaciones de temperatura entre el día y la noche",
       "Núcleo metálico que ocupa aproximadamente el 60% de su masa"
     ],
-    "image": "https://solarsystem.nasa.gov/system/stellar_items/image_files/2_mercury_480x320.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg/600px-Mercury_in_color_-_Prockter07-edit1.jpg"
   },
   {
     "id": "venus",
@@ -33,7 +33,7 @@
       "Presión atmosférica 92 veces mayor que la de la Tierra",
       "Superficie volcánica con extensas llanuras de lava"
     ],
-    "image": "https://solarsystem.nasa.gov/system/stellar_items/image_files/3_venus_480x320.jpg"
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/general/images/2024/03/venus-mariner-10-pia23791-fig2-16x9-1.jpg?w=1920&h=1080&fit=clip&crop=faces%2Cfocalpoint"
   },
   {
     "id": "earth",
@@ -52,7 +52,7 @@
       "Tectónica de placas activa"
     ],
     "moons": ["Luna"],
-    "image": "https://solarsystem.nasa.gov/system/stellar_items/image_files/4_earth_480x320.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/600px-The_Blue_Marble_%28remastered%29.jpg"
   },
   {
     "id": "mars",
@@ -71,7 +71,7 @@
       "Atmósfera delgada compuesta principalmente de dióxido de carbono"
     ],
     "moons": ["Fobos", "Deimos"],
-    "image": "https://solarsystem.nasa.gov/system/stellar_items/image_files/6_mars_480x320.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/1200px-OSIRIS_Mars_true_color.jpg"
   },
   {
     "id": "jupiter",
@@ -90,7 +90,7 @@
       "Al menos 79 lunas conocidas"
     ],
     "moons": ["Ío", "Europa", "Ganímedes", "Calisto"],
-    "image": "https://solarsystem.nasa.gov/system/stellar_items/image_files/5_jupiter_480x320.jpg"
+    "image": "https://science.nasa.gov/wp-content/uploads/2024/03/jupiter-marble-pia22946-16x9-1.jpg?resize=768,432"
   },
   {
     "id": "saturn",
@@ -109,7 +109,7 @@
       "Al menos 82 lunas conocidas"
     ],
     "moons": ["Titán", "Encélado", "Mimas", "Tetis", "Dione", "Rea"],
-    "image": "https://solarsystem.nasa.gov/system/stellar_items/image_files/38_saturn_480x320.jpg"
+    "image": "https://concepto.de/wp-content/uploads/2020/03/saturno-comparacion-tierra-taman%CC%83o-e1585014105365.jpg"
   },
   {
     "id": "uranus",
@@ -128,7 +128,7 @@
       "27 lunas conocidas, todas nombradas por personajes de Shakespeare y Pope"
     ],
     "moons": ["Miranda", "Ariel", "Umbriel", "Titania", "Oberón"],
-    "image": "https://solarsystem.nasa.gov/system/stellar_items/image_files/69_uranus_480x320.jpg"
+    "image": "https://science.nasa.gov/wp-content/uploads/2023/06/uranus-pia18182-1920x640-1-jpg.webp"
   },
   {
     "id": "neptune",
@@ -147,6 +147,6 @@
       "14 lunas conocidas"
     ],
     "moons": ["Tritón", "Nereida", "Proteo"],
-    "image": "https://solarsystem.nasa.gov/system/stellar_items/image_files/90_neptune_480x320.jpg"
+    "image": "https://science.nasa.gov/wp-content/uploads/2023/06/neptune-pia01492-1920x640-2-jpg.webp"
   }
 ]

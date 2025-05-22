@@ -76,7 +76,10 @@ const styles = StyleSheet.create({
   },
   planetImage: {
     width: "100%",
-    height: 150,
+    height: 300,
+    resizeMode: "cover",
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
   },
   planetInfo: {
     padding: 15,

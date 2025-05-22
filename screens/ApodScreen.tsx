@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
-import { StyleSheet, Text, View, Image, ScrollView, ActivityIndicator, TouchableOpacity } from "react-native"
-import { format } from "date-fns"
+import { StyleSheet, Text, View, Image, ScrollView, ActivityIndicator, TouchableOpacity, Platform } from "react-native"
+import { format, parse } from "date-fns"
 import { es } from "date-fns/locale"
 import DateTimePicker from "@react-native-community/datetimepicker"
 import { Ionicons } from "@expo/vector-icons"
@@ -31,6 +31,8 @@ const ApodScreen = () => {
 
     try {
       const formattedDate = format(selectedDate, "yyyy-MM-dd")
+      console.log("Fetching APOD for date:", formattedDate) // Para depuración
+      
       const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${formattedDate}`)
 
       if (!response.ok) {
@@ -38,6 +40,7 @@ const ApodScreen = () => {
       }
 
       const data = await response.json()
+      console.log("APOD data received:", data.title) // Para depuración
       setApodData(data)
     } catch (err) {
       setError(err instanceof Error ? err.message : "Ocurrió un error desconocido")
@@ -59,12 +62,67 @@ const ApodScreen = () => {
     }
   }
 
+  // Función para manejar cambios de fecha en la web
+  const handleWebDateChange = (e: any) => {
+    try {
+      // Convertir el valor del input a un objeto Date
+      const dateString = e.target.value // Formato: "YYYY-MM-DD"
+      const selectedDate = new Date(dateString)
+      
+      // Verificar que la fecha sea válida
+      if (isNaN(selectedDate.getTime())) {
+        throw new Error("Fecha inválida")
+      }
+      
+      console.log("Web date selected:", dateString, "Converted to:", selectedDate) // Para depuración
+      
+      // Actualizar el estado y buscar los datos
+      setDate(selectedDate)
+      fetchApodData(selectedDate)
+    } catch (error) {
+      console.error("Error parsing date:", error)
+      setError("Error al seleccionar la fecha. Por favor, intenta de nuevo.")
+    }
+  }
+
   const showDatepicker = () => {
     setShowDatePicker(true)
   }
 
-  return (
-    <ScrollView style={styles.container}>
+  // Renderizado condicional del selector de fecha según la plataforma
+  const renderDatePicker = () => {
+    const today = new Date()
+    const minDate = "1995-06-16" // APOD comenzó el 16 de junio de 1995
+    const maxDate = format(today, "yyyy-MM-dd")
+    
+    if (Platform.OS === 'web') {
+      // En web, usamos un input de tipo date nativo
+      return (
+        <View style={styles.datePickerContainer}>
+          <Text style={styles.dateLabel}>Selecciona una fecha:</Text>
+          <View style={styles.webDatePickerContainer}>
+            <input
+              type="date"
+              value={format(date, "yyyy-MM-dd")}
+              onChange={handleWebDateChange}
+              min={minDate}
+              max={maxDate}
+              style={{
+                padding: '10px',
+                fontSize: '16px',
+                borderRadius: '5px',
+                border: '1px solid #ddd',
+                width: '100%',
+                color: '#6200ee',
+              }}
+            />
+          </View>
+        </View>
+      )
+    }
+
+    // En dispositivos móviles, usamos el DateTimePicker nativo
+    return (
       <View style={styles.datePickerContainer}>
         <Text style={styles.dateLabel}>Selecciona una fecha:</Text>
         <TouchableOpacity style={styles.dateButton} onPress={showDatepicker}>
@@ -77,11 +135,17 @@ const ApodScreen = () => {
             mode="date"
             display="default"
             onChange={handleDateChange}
-            maximumDate={new Date()}
+            maximumDate={today}
             minimumDate={new Date(1995, 5, 16)} // APOD started on June 16, 1995
           />
         )}
       </View>
+    )
+  }
+
+  return (
+    <ScrollView style={styles.container}>
+      {renderDatePicker()}
 
       {loading ? (
         <View style={styles.loadingContainer}>
@@ -102,7 +166,11 @@ const ApodScreen = () => {
           <Text style={styles.date}>{format(new Date(apodData.date), "dd MMMM yyyy", { locale: es })}</Text>
 
           {apodData.media_type === "image" ? (
-            <Image source={{ uri: apodData.url }} style={styles.image} resizeMode="contain" />
+            <Image 
+              source={{ uri: apodData.url }} 
+              style={styles.image} 
+              resizeMode="contain" 
+            />
           ) : apodData.media_type === "video" ? (
             <View style={styles.videoContainer}>
               <Text style={styles.videoText}>Este contenido es un video. Visita el siguiente enlace para verlo:</Text>
@@ -139,6 +207,9 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 2,
+  },
+  webDatePickerContainer: {
+    marginTop: 10,
   },
   dateLabel: {
     fontSize: 16,

@@ -107,7 +107,8 @@ const styles = StyleSheet.create({
   },
   planetImage: {
     width: "100%",
-    height: 250,
+    height: 500,
+    resizeMode: "cover"
   },
   infoContainer: {
     padding: 20,

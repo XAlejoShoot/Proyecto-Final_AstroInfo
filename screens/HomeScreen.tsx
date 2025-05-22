@@ -51,7 +51,7 @@ const HomeScreen = () => {
 
         <View style={styles.footer}>
             <Text style={styles.footerText}>
-            Desarrollado como proyecto educativo utilizando React Native y la API de la NASA.
+            Proyecto de Daniel Garzon - AstroInfo 🌌 con React Native y datos de la NASA 🚀
             </Text>
         </View>
         </ScrollView>
