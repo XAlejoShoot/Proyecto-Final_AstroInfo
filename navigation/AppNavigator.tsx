@@ -43,7 +43,7 @@ const MainNavigator = () => {
             tabBarActiveTintColor: "#6200ee",
             tabBarInactiveTintColor: "gray",
             headerStyle: {
-            backgroundColor: "#6200ee",
+            backgroundColor: "#4A0080",
             },
             headerTintColor: "#fff",
             headerTitleStyle: {
